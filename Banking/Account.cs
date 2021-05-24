@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Banking
 {
-    class Account
+    class account
     {
         public static string AcctNbr { get; private set; }
         public decimal Balance { get; private set; }
@@ -36,7 +36,7 @@ namespace Banking
             Balance = Balance - amount;
             return true; 
         }
-        public bool Transfer(decimal amount, Account toAccount)
+        public bool Transfer(decimal amount, account toAccount)
         {
             var success = this.Withdraw(amount);
             if(success == true)
